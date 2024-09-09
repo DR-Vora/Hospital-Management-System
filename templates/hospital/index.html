@@ -1,0 +1,325 @@
+{% extends 'hospital/homebase.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+<head>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/national-cancer-institute-701-FJcjLAQ-unsplash.jpg" %}');
+      background-position: center left;
+      background-size:60%;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h5
+    {
+      text-align: center right;   
+    }
+
+
+    .alert {
+      margin: 0px;
+    }
+
+
+
+    .glow {
+      font-size: 50px;
+      color: #F5F5F5;
+      text-align: center right;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+      }
+
+      to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #30E3CA, 0 0 40px #30E3CA, 0 0 50px #30E3CA, 0 0 60px #30E3CA, 0 0 70px #30E3CA, 0 0 80px #30E3CA;
+      }
+    }
+
+    .right {
+      position: absolute;
+      right: 0px;
+      width: 37%;
+      height: 80%;
+      padding: 0px;
+    }
+
+      .blog-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+      align-items: center;
+    }
+
+    .blog-container .box{
+      flex: 1 1 13rem;
+      padding: 20px;
+    }
+
+    .blog-container .box img{
+      width: 100%;
+      height: 75%;
+      object-fit: cover;
+      overflow: hidden;
+      align-items: center;
+    }
+
+    .blog-container .box:hover{
+      background: whitesmoke;
+    }
+
+    .blog-container .box span{
+      font-size: 0.8rem;
+    }
+
+    .blog-container .box h3{
+      font-size: 1.2rem;
+    }
+
+    .blog-container .box p{
+      font-size: 0.94rem;
+      margin: 4px 0;
+    }
+
+    .blog-container .box .blog-btn{
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      color: var(--bg-color);
+    }
+
+    .blog-container .box .blog-btn .bx{
+      font-size: 20px;
+    }
+
+    .blog-container .box .blog-btn:hover{
+      color:#444;
+      column-gap: 0.7rem;
+      transition: 0.3s;
+    }
+
+    .aboutco {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/online-marketing-hIgeoQjS_iE-unsplash.jpg" %}');
+      background-position: center right;
+      background-size:60%;
+      background-repeat: no-repeat;
+      background-color: #F5F5F5;
+    }
+
+    .left {
+      position: absolute;
+      left: 0px;
+      width: 37%;
+      height: 80%;
+      padding: 10px;
+    }
+    .footer{
+      background: #40514E;
+      color: #30E3CA;
+      border-top: 2px solid #2F89FC;
+      padding-top: 20px;
+     }
+
+    .footer-container{
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .footer-container .logo{
+      margin-bottom: 1rem;
+    }
+
+    .footer-container .footer-box{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social{
+      display: flex;
+      align-items: center;
+    }
+
+    .social a{
+      font-size: 24px;
+      color: #F5F5F5;
+      margin-right: 1rem;
+    }
+
+    .social a:hover{
+      color: grey;
+    }
+
+    .footer-box h3{
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .footer-box a{
+      color: whitesmoke;
+      margin-bottom: 10px;
+    }
+
+    .footer-box a:hover{
+      color: grey;
+    }
+ 
+
+  </style>
+</head>
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+
+  <h5 class="display-3 glow" style="font-size: 100px; text-align: right; padding: 1rem 1rem 1rem 1rem;"> D.R.VORA </h5>
+  
+  <div class="right">
+  <h5> D.R.VORA i.e DHAIRYA RUPESHKUMAR VORA's hospital stands as a beacon of excellence 
+    in the healthcare industry, renowned for its unwavering commitment to providing
+     top-tier medical care and compassionate service. Its state-of-the-art facilities
+     and cutting-edge technology ensure that patients receive the best possible treatment, 
+     while its dedicated team of doctors, nurses, and staff work tirelessly to uphold the
+     highest standards of care. The hospital's holistic approach to healthcare encompasses not only physical
+      well-being but also emotional and mental support for patients and their families.
+      D.R.VORA hospital's sterling reputation is a testament to its exceptional medical expertise,
+       personalized attention, and unwavering dedication to improving the lives of those it serves.
+  </h5></div>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+
+
+  <p class="lead">
+    <a class="btn btn-lg" href="/patientclick" role="button" style="color: #F5F5F5; background-color: #40514E; border-radius: 8px; float: right;">Take Appointment Now!</a>
+  </p>
+  <br><br>
+</div>
+
+<br><br><br><br>
+
+<section class="blog" id="blog">
+  <div class="heading">
+      <h2 style="text-align: center;">Extra Service We Offer</h2>
+      <p>Our department & special service</p>
+  </div>
+
+  <div class="blog-container container">
+      <div class="box">
+        <i class='bx bxs-ambulance bx-fade-left-hover bx-lg' style='color:rgba(252,12,12,0.61)' ></i>
+          <h3>Emergency Care</h3>
+          <p style="text-align: left;">D.R. Vora's emergency care services cover a range of medical specialties, including emergency medicine, pediatric emergency medicine, and emergency radiology.</p>
+      </div>
+
+      <div class="box">
+        <i class='bx bx-phone-call bx-tada-hover bx-lg' style='color:#609454' ></i>
+          <h3 style="align-items: center;">Call Center 24/7</h3>
+          <p style="text-align: left;">If you need any assistance with your health or medical issues, you can contact our call center 24/7. Our call center is staffed by qualified and experienced doctors who can provide you with advice, guidance, and referrals. </p>
+      </div>
+
+      <div class="box">
+        <i class='bx bxs-capsule bx-flashing-hover bx-lg' style='color:#2d9e92' ></i>
+          <h3>Outdoor Checkup</h3>
+          <p style="text-align: left;"> Outdoor checkup services offer comprehensive healthcare solutions at the convenience of a patient's doorstep. These services typically include various medical procedures and support, and they are designed to cater to the patient's needs in a patient-centric manner.
+          </p>
+      </div>
+  </div>
+</section>
+
+<br><br><br><br>
+
+<div class="aboutco" style="margin-bottom: 0px;margin-top: 0px;">
+
+  <h2 style="text-align: left; padding: 10px;">About Us</h2>
+
+  <div class="left">
+  <h5> D.R.VORA i.e DHAIRYA RUPESHKUMAR VORA's hospital stands as a beacon of excellence 
+    in the healthcare industry, renowned for its unwavering commitment to providing
+     top-tier medical care and compassionate service. Its state-of-the-art facilities
+     and cutting-edge technology ensure that patients receive the best possible treatment, 
+     while its dedicated team of doctors, nurses, and staff work tirelessly to uphold the
+     highest standards of care. The hospital's holistic approach to healthcare encompasses not only physical
+      well-being but also emotional and mental support for patients and their families.
+      D.R.VORA hospital's sterling reputation is a testament to its exceptional medical expertise,
+       personalized attention, and unwavering dedication to improving the lives of those it serves.
+  </h5></div>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br>
+</div>
+  
+<br><br><br><br>
+  
+  
+{% include "hospital/admin_doctor_patient_card.html" %}
+<br><br><br>
+<br><br><br>
+
+<section class="footer" id="contact">
+  <div class="footer-container container">
+      <div class="footer-box">
+          <a href="#" style="color: #9EC8B9;"><h2>D.R.VORA <i class='bx bx-plus-medical'></i></h2></a>
+          <div class="social">
+              <a href="https://www.youtube.com/"><i class='bx bxl-youtube' ></i></a>
+              <a href=""><i class='bx bxl-linkedin-square'></i></a>
+              <a href=""><i class='bx bx-envelope' ></i></a>
+              <a href=""><i class='bx bxl-blogger'></i></a>
+          </div>
+      </div>
+
+      <div class="footer-box">
+          <h3>Pages</h3>
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">About</a>
+          <a href="#">Blogs</a>
+          <a href="#">Contact</a>
+      </div>
+
+      <div class="footer-box">
+          <h3>Policy</h3>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Appointment Policy</a>
+          <a href="#">Discharge Policy</a>
+          <a href="#">Ayushman Card Policy</a>
+          <a href="#">Terms & Conditions</a>
+      </div>
+
+      <div class="footer-box">
+          <h3>Information</h3>
+          <a href="#">FAQs</a>
+          <a href="#">Documents Required</a>
+          <a href="#">Annual Returns</a>
+          <a href="#">Investors</a>
+          <a href="#">Our Benefits</a>
+      </div>
+  </div>
+</section>
+
+
+{% endblock content %}
+
+
